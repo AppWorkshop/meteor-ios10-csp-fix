@@ -1,0 +1,28 @@
+{
+  "name": "meteor-ios10-csp-fix",
+  "version": "0.1.0",
+  "description": "Fixes the iOS 10 issue with websockets: \"Refused to connect to wss://mydomain.com/sockjs/.../websocket because it appears in neither the connect-src directive nor the default-src directive of the Content Security Policy\"",
+  "cordova": {
+    "id": "meteor-ios10-csp-fix",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AppWorkshop/meteor-ios10-csp-fix"
+  },
+  "keywords": [
+    "cordova",
+    "meteor",
+    "ios",
+    "ios10",
+    "csp"
+  ],
+  "author": "Mike Cunneen - The App Workshop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AppWorkshop/meteor-ios10-csp-fix/issues"
+  },
+  "homepage": "https://github.com/AppWorkshop/meteor-ios10-csp-fix#readme"
+}
