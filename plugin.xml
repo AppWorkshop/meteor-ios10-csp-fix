@@ -16,6 +16,6 @@
 
 
     <platform name="ios">
-        <hook type="after_build" src="scripts/afterBuild.js" />
+        <hook type="after_prepare" src="scripts/afterBuild.js" />     
     </platform>
 </plugin>
