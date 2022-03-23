@@ -3,7 +3,7 @@ module.exports = function(context) {
   const propertiesReader = require('properties-reader');
   const PropertiesParser = require('properties-parser');
 
-  console.log('cordova-plugin-comment-googleservices: Running')
+  console.log('cordova-plugin-remove-googleservices: Running')
 
   const propertiesFilePath = path.join(context.opts.projectRoot, `platforms/android/project.properties`);
 
@@ -11,9 +11,7 @@ module.exports = function(context) {
   let googleServicesPropKey;
   properties.each((key, value) => {
     // called for each item in the reader,
-    // first with key=main.some.thing, value=foo
-    // next with key=blah.some.thing, value=bar
-    console.log('checking prop', key, value);
+    // console.log('checking prop', key, value);
     if (/cordova-support-google-services/.test(value)) {
       // remove this prop val from the object
       console.log(`Removing properties key in ${propertiesFilePath}: ${key}=${value}`);
@@ -27,6 +25,8 @@ module.exports = function(context) {
     propsEditor.save(propertiesFilePath, function(){
       console.log(`${propertiesFilePath} modified.`);
     })
+  } else {
+    console.log(`cordova-support-google-services property not found in ${propertiesFilePath}; it may have already been removed.`);
   }
-  console.log('cordova-plugin-comment-googleservices: Done')
+  console.log('cordova-plugin-remove-googleservices: Done')
 }

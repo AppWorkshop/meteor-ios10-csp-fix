@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-comment-googleservices",
+  "name": "cordova-plugin-remove-googleservices",
   "version": "0.1.0",
   "description": "Hack that fixes the meteor/android error \"Cannot add extension with name 'googleServices', as there is an extension already registered with that name.\"",
   "cordova": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AppWorkshop/cordova-plugin-comment-googleservices"
+    "url": "https://github.com/AppWorkshop/cordova-plugin-remove-googleservices"
   },
   "keywords": [
     "cordova",
@@ -22,9 +22,9 @@
   "author": "Mike Cunneen - The App Workshop",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AppWorkshop/cordova-plugin-comment-googleservices/issues"
+    "url": "https://github.com/AppWorkshop/cordova-plugin-remove-googleservices/issues"
   },
-  "homepage": "https://github.com/AppWorkshop/cordova-plugin-comment-googleservices#readme",
+  "homepage": "https://github.com/AppWorkshop/cordova-plugin-remove-googleservices#readme",
   "dependencies": {
     "properties-parser": "^0.3.1",
     "properties-reader": "^2.2.0"
