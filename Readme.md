@@ -1,14 +1,12 @@
-# Meteor 1.4.1 Cordova iOS 10 Content Security Policy Web Sockets Fix
+# Meteor Cordova Android Fix for Duplicate Google Services
 
 That's a mouthful of a title. But it's a really simple little cordova plugin that 
-just rewrites the ```META``` tag in your cordova build's ```platforms/ios/www/index.html```
+just comments out the ```apply plugin: com.google.gms.googleservices.GoogleServicesPlugin``` tag in your cordova build's ```platforms/android/cordova-support-google-services/XXXXXX-build.gradle```
 file.
 
-This fixes an issue with meteor 1.4 (and probably other cordova apps) where iOS 10's content security 
-policy prevents connections via web sockets.
-
-The new content security policy META element will be:
+This fixes an issue with meteor android builds which give the error:
 
 ```
-    <meta http-equiv="Content-Security-Policy" content="default-src * data: blob: 'unsafe-inline' 'unsafe-eval' ws: wss:;">
+Cannot add extension with name 'googleServices', as there is an extension already registered with that name.
 ```
+

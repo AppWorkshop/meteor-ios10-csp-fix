@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-        id="meteor-ios10-csp-fix" version="0.1.0">
-    <name>Meteor 1.4.1 iOS 10 CSP Fix</name>
-    <description>Fixes the iOS 10 issue with websockets: "Refused to connect to wss://mydomain.com/sockjs/.../websocket because it appears in neither the connect-src directive nor the default-src directive of the Content Security Policy"</description>
+        id="cordova-plugin-comment-googleservices" version="0.1.0">
+    <name>Hack to comment googleServices in meteor gradle build file</name>
+    <description>Fixes the meteor/android error "Cannot add extension with name 'googleServices', as there is an extension already registered with that name."</description>
     <license>MIT</license>
-    <keywords>cordova,meteor,ios,ios10,csp</keywords>
+    <keywords>cordova,meteor,android,googleservices</keywords>
     <author>Mike Cunneen - The App Workshop</author>
-    <repo>https://github.com/AppWorkshop/meteor-ios10-csp-fix.git</repo>
+    <repo>https://github.com/AppWorkshop/cordova-plugin-comment-googleservices</repo>
     <engines>
         <engine name="cordova" version=">=5.4.1" />
         <engine name="cordova-ios" version=">=4.0.0" />
@@ -15,7 +15,7 @@
     </engines>
 
 
-    <platform name="ios">
-        <hook type="after_prepare" src="scripts/afterBuild.js" />     
+    <platform name="android">
+        <hook type="after_prepare" src="scripts/afterPrepare.js" />
     </platform>
 </plugin>

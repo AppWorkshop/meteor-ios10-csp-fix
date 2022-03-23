@@ -1,16 +1,16 @@
 {
-  "name": "meteor-ios10-csp-fix",
+  "name": "cordova-plugin-comment-googleservices",
   "version": "0.1.0",
-  "description": "Fixes the iOS 10 issue with websockets: \"Refused to connect to wss://mydomain.com/sockjs/.../websocket because it appears in neither the connect-src directive nor the default-src directive of the Content Security Policy\"",
+  "description": "Hack that fixes the meteor/android error \"Cannot add extension with name 'googleServices', as there is an extension already registered with that name.\"",
   "cordova": {
-    "id": "meteor-ios10-csp-fix",
+    "id": "cordova-plugin-comment-googleservices",
     "platforms": [
-      "ios"
+      "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/AppWorkshop/meteor-ios10-csp-fix"
+    "url": "https://github.com/AppWorkshop/cordova-plugin-comment-googleservices"
   },
   "keywords": [
     "cordova",
@@ -22,7 +22,11 @@
   "author": "Mike Cunneen - The App Workshop",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AppWorkshop/meteor-ios10-csp-fix/issues"
+    "url": "https://github.com/AppWorkshop/cordova-plugin-comment-googleservices/issues"
   },
-  "homepage": "https://github.com/AppWorkshop/meteor-ios10-csp-fix#readme"
+  "homepage": "https://github.com/AppWorkshop/cordova-plugin-comment-googleservices#readme",
+  "dependencies": {
+    "properties-parser": "^0.3.1",
+    "properties-reader": "^2.2.0"
+  }
 }
